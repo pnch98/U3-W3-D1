@@ -4,7 +4,7 @@ const initialState = {
   },
 };
 
-const mainReducer = (state = initialState, action) => {
+const favouriteReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_JOB":
       return {
@@ -25,4 +25,4 @@ const mainReducer = (state = initialState, action) => {
   }
 };
 
-export default mainReducer;
+export default favouriteReducer;

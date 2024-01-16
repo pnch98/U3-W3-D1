@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { StarFill } from "react-bootstrap-icons";
 
 const Favourites = () => {
-  const favourites = useSelector((state) => state.favourite.list);
+  const favourites = useSelector((state) => state.favourite.favourite.list);
   const dispatch = useDispatch();
 
   const navigate = useNavigate();

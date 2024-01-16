@@ -4,7 +4,7 @@ import { Star, StarFill } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
 
 const Job = ({ data }) => {
-  const favourites = useSelector((state) => state.favourite.list);
+  const favourites = useSelector((state) => state.favourite.favourite.list);
   const dispatch = useDispatch();
 
   const isFav = favourites.includes(data.company_name);
